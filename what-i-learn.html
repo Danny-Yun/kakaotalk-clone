@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<style>
+</style>
+<script>
+</script>
+<meta charset="UTF-8">
+<title></title>
+<!--타이틀의 아이콘 설정(넷플릭스)-->
+<link
+    rel="shortcut icon"
+    href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico"
+/>
+</head>
+<body>
+    <!-- 명명규칙 -->
+    <q>폴더명과 파일명은 모두 소문자로 작성한다.</q>
+
+    <p>
+        HTML의 태그와 속성 등을 외울 필요가 없다. 구글링하면 나오기 때문에 원리를 이해하기만 하면 된다.
+        <a href="https://developer.mozilla.org/ko/docs/Web/HTML/Element">MDN사이트에서 확인 가능</a>
+    </p>
+    
+    <pre>HELLO!</pre>
+    <cite>HELLO!</cite><br>
+    <code>윤지우</code>
+    <i>윤지우</i>
+    
+    <!-- 쓸만한 form태그-->
+    <form>
+        <!--fieldset은 여닫는 부분 사이를 사각형으로 영역을 만들어줌-->
+        <fieldset>
+            <legend>필드셋 제목</legend>
+            <p>아이디 : <input type="text" placeholder="ID" required></p>
+            <p>비밀번호 : <input type="password" minlength="8" placeholder="8자 이상 입력하세요"></p>
+
+            <p><input type="file" accept=".pdf, .png, .txt"/></p>
+
+            <p>
+                <!-- label태그의 글자를 클릭하면 옆에 checkbox도 체크된다. -->
+                <label for="cheese">Do you like cheese?</label>
+                <input type="checkbox" name="cheese" id="cheese">
+            </p>
+            
+            <p>
+                <!-- url을 입력하지 않고 전송버튼을 누르면 경고창이 뜬다. 이메일도 마찬가지-->
+                <!-- label태그의 for와 input태그의 아이디가 일치하도록 -->
+                <label for="url">please write url. </label>
+                <input id="url" type="url" placeholder="URL"/><br>
+                please write email. <input type="email" />
+            </p>
+
+            <p>
+                메일 수신여부 : 
+                <input type="radio" value="y" name="receive1">예
+                <input type="radio" value="z" name="receive2">아니오
+            </p>
+            
+            <P>
+                식사 여부 : 
+                <input type="radio" name="eat" /> 먹음
+                <input type="radio" name="eat" /> 안 먹음
+                <input type="radio" name="eat" /> 먹는중
+            </P>
+            
+            <p>
+                현재 공부 중인 것 :
+                <input type="checkbox" name="study" /> HTML
+                <input type="checkbox" name="study" /> CSS
+                <input type="checkbox" name="study" /> JS
+            </p>
+            
+            <P>
+                제출
+                <input type="submit" value="전송">
+                <input type="reset" value="취소">
+                <input type="button" value="확인">
+            </P>
+            
+            <p>만족도 : <input type="range" /></p>
+            
+            <p>​날짜 : <input type="date" /></p>
+            
+            <p>시간 : <input type="time" /></p>
+            
+            <p>검색 : <input type="search" /></p>
+            
+            <p>나이 : <input type="number" min="0" max="100" step="10" /></p> 
+            
+            <p><textarea cols="30" rows="10 /"></textarea></p>
+            
+            <select>
+                <option>Python</option>
+                <option>Node.js</option>
+                <option>Ruby</option>
+                <option>Java</option>
+            </select>
+            
+            <p>수강지역선택
+                <select>
+                    <optgroup label="마포구">
+                        <option>서교동</option>
+                        <option>동교동</option>
+                        <option>합정동</option>
+                    </optgroup>
+                    <optgroup label=" 동대문구">
+                        <option>이문동</option>
+                        <option>회기동</option>
+                        <option>전농동</option>
+                    </optgroup>
+                </select>
+            </p>
+        </fieldset>
+        
+        <table border="1">
+            <tr>
+                <!--열의 태그 내에 colspan="3"을 입력한다면 3칸짜리 컬럼을 1칸으로 합쳐준다.-->
+                <td colspan="3">공연요금</td>
+            </tr>
+            <tr>
+                <td>구분</td>
+                <td>s석</td>
+                <td>VIP</td>
+            </tr>
+        </table>
+        
+        <table border="1">
+            <tr>
+                <!--행은 태그 내에 rowspan="2"을 입력한다면 2칸짜리 컬럼을 1칸으로 합쳐준다.-->
+                <td rowspan="2">공연시간</td>
+                <td>1회</td>
+                <td>12시 ~ 14시</td>
+            </tr>
+            <tr>
+                <td>2회</td>
+                <td>18시 ~ 20시</td>
+            </tr>
+        </table>
+        
+        <ul> <!--순서X-->
+            <li>사과</li>
+            <li>바나나</li>
+            <li>메론</li>
+        </ul>
+        
+        <ol> <!--순서O-->
+            <li>사과</li>
+            <li>바나나</li>
+            <li>메론</li>
+        </ol>
+    </form>
+
+    <!-- 사용자 코드 조각 활용(html.json에 복붙) -->
+    <!-- 
+        "korea html form" : {
+		"prefix": "korea-html-form",
+		"body": [
+			"<!DOCTYPE html>",
+			"<html lang=\"ko\">",
+			"<head>",
+				"<style>",
+				"</style>",
+				"<script>",
+				"</script>",
+				"<meta charset=\"UTF-8\">",
+				"<title>$1</title>",
+			"</head>",
+			"<body>",
+			"</body>",
+			"</html>"
+		],
+		"description": "html 자동완성 추가"
+	} 
+    -->
+    
+</body>
+</html>
+    
