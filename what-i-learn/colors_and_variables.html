@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<style>
+    /* 
+        :root라 불리는 요소에 변수를 추가한다. 기본적으로 모든 document의 뿌리가 된다. 
+        이렇게 하면 일일히 기입할 필요없이 변수에 저장해놓을 수 있다. 수정사항이 생길 경우에 
+        한 번만 고치면 돼서 시간을 절약할 수 있다.  
+    */ 
+    :root {
+        /* 변수는 아래와 같은 방식으로 지을 수 있다.(dash(-) 2개 다음에 1개 그리고 변수 이름) */
+        --main-color:rgba(16, 51, 117, 0.8);
+        /* 컬러말고도 다른 요소들도 적용 가능하다 */
+        --default-border: 3px solid var(--main-color);
+    }
+    p {
+        /* rgba를 통해 색상을 정할 수도 있다. red, green, blue, alpha(투명도/0~1)를 나타낸다. */
+        background-color: rgba(252, 206, 0, 0.8);
+    }
+    a {
+        color: var(--main-color);
+        border: var(--default-border);
+    }
+    h3 {
+        color: var(--main-color);
+    }
+</style>
+<meta charset="UTF-8">
+<title>colors and variables</title>
+</head>
+<body>
+    <h3>Saint Paris</h3>
+    <p>
+        Duis quis risus mi. Aenean nec lorem sollicitudin, sollicitudin lorem quis, ornare arcu. Curabitur ut nisl placerat, 
+        tincidunt leo non, fringilla turpis. Cras mattis sodales nunc in ultricies. Nullam a ultrices sem. Nullam tristique 
+        molestie tortor sit amet aliquam. Nam quis velit vitae enim bibendum elementum vel sed velit. Nam eget risus velit. 
+    </p>
+    <a href="#">website</a>
+    
+</body>
+</html>
