@@ -1,0 +1,86 @@
+/* Transition */
+/*
+    transition은 기본적으로 어떤 상태에서 다른 상태로의 '변화'를 애니메이션으로 만드는 방법이다. 
+    그리고 transition이라는 속성은 state가 없는 요소에 붙어야 한다. state에 있으면 안 된다. 
+    가장 처음 생겨난 곳(root), element에 있어야 한다. 
+   
+    transition : 지정대상 변화시간 효과;
+
+    transitiondml 효과는 정말 다양하다. 효과마다 러닝커브(가속, 감속) 정도가 다르다. 
+    대표적으론 ease-in, ease-out, ease-in-out, linear 등이 있다. 
+    cubic-bezier를 사용하면 나만의 커브를 만들 수도 있다. 
+*/
+a {
+    color: azure;
+    background-color: tomato;
+    text-decoration: none;  /* 밑줄 제거 */
+    padding: 3px 5px;
+    border-radius: 5px;
+    font-size: 55px;
+/*  transition: background-color 10s ease-in-out, color 5s ease-in-out; 여러개 지정 가능*/
+    transition: all 3s ease-in-out;  /* 모든 요소의 변화를 3초동안 보여줌 */ 
+}
+a:hover {  /* State */
+    border-radius: 20px;
+    color:tomato;
+    background-color: wheat;
+}
+
+
+/* Transformation */
+/*
+    단어 그대로 한 요소를 변형시킬 수 있다. 기존의 효과도 있지만 뒤에 X,Y,Z를 붙여서 다양한 방법으로 효과를 줄 수 있다.
+    rotate() - (+ x,y,z축으로) 회전
+    scale() - (+ x,y,z축으로)  크기 변경
+    translate() - (+ x,y,z축으로) 이동
+
+*/
+img {
+    border: 5px solid black;
+    border-radius: 50%;
+    transition: transform 2s ease-in-out;
+}
+img:hover {
+    transform: rotateY(360deg) scale(0.5);
+}
+
+
+/* Animation */
+/* 
+    animation은 아무것도 하지 않아도 실행되는 효과를 말한다. 
+    아래처럼 keyframes 쓰고, 애니메이션의 이름을 적어주면 만들 수 있다. 
+*/
+@keyframes superSexyCoinFlip {
+    
+    from {
+        transform: rotateX(0);
+    }
+    to {
+        transform: rotateX(360deg);
+    }
+}
+@keyframes moveRightAndBack {
+    /* 100을 원하는 만큼 여러 단위로 나눠서 단계별로 효과를 줄 수도 있다. */
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(300px);
+    }
+    100% {
+        transform: translateX(0);
+        /* 투명하게 만듬 */
+        opacity: 0;
+    }
+}
+#ripple {
+    border: 5px solid blue;
+    border-radius: 50%;
+    /* 끝에 infinite를 걸면 무한 재생시킬 수 있다.*/
+    animation: superSexyCoinFlip 3s ease-in-out infinite;
+}
+#bf5 {
+    border: 5px solid yellow;
+    border-radius: 50%;
+    animation: moveRightAndBack 2s ease-in-out infinite;
+}
