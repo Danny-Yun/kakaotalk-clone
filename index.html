@@ -3,18 +3,30 @@
 <head>
 <!-- 대부분의 웹 서버가 디폴트로 index.html을 찿아보도록 설정되어 있음  -->
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Welcome to Kakaotalk</title>
 </head>
 <body>
     <div id="status-bar">
-        <div class="status-bar_column">
+        <!-- BEM 방식 / 태그를 class로 통일하며 가독성을 높이는 효과가 있다. -->
+        <div class="status-bar__column">
             <span>No Service</span>
             <!-- Wifi Icon -->
+            <i class="fas fa-wifi"></i>
         </div>
-        <div class="status-bar_column">
+        <div class="status-bar__column">
             <span>18:43</span>
         </div>
-        <div class="status-bar_column"></div>
+        <div class="status-bar__column">
+            <span>11%</span>
+            <!-- Battery Icon -->
+            <i class="fas fa-battery-quarter"></i>
+            <!-- Lightning Icon -->
+            <i class="fas fa-bolt"></i>
+        </div>
     </div>
+    <!-- script 태그는 제일 마지막에, body 태그 닫기 직전 -->
+    <!-- 니콜라스의 font-awesome code kit(유료버전 사용가능)-->
+    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
 </body>
 </html>
