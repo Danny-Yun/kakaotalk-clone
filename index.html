@@ -5,9 +5,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Welcome to Kakaotalk</title>
+<!-- link:css + enter : css링크 단축키 -->
+<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div id="status-bar">
+    <div class="status-bar">
         <!-- BEM 방식 / 태그를 class로 통일하며 가독성을 높이는 효과가 있다. -->
         <div class="status-bar__column">
             <span>No Service</span>
@@ -20,11 +22,27 @@
         <div class="status-bar__column">
             <span>11%</span>
             <!-- Battery Icon -->
-            <i class="fas fa-battery-quarter"></i>
+            <i class="fas fa-battery-quarter fa-lg"></i>
             <!-- Lightning Icon -->
             <i class="fas fa-bolt"></i>
         </div>
     </div>
+
+    <header class="welcome-header">
+        <h1 class="welcome-header__title">Welcome to KakaoTalk</h1>
+        <p class="welcome-header__text">
+            If you have a Kakao Account, log in with your email or phone number.
+        </p>
+    </header>
+
+    <form id="login-form">
+        <input type="text" placeholder="Email or phone number" />
+        <input type="password" placeholder="Password" />
+        <input type="submit" value="Log in" />
+        <button type="button" onclick="location.href='www.naver.com'">Sign Up</button>
+        <a href="#">Find Kakao Account or Password</a>
+    </form>
+
     <!-- script 태그는 제일 마지막에, body 태그 닫기 직전 -->
     <!-- 니콜라스의 font-awesome code kit(유료버전 사용가능)-->
     <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>

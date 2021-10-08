@@ -1,0 +1,24 @@
+/* 구글 폰트 적용*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+/* reset 적용*/
+@import "reset.css";
+
+@import "status-bar.css";
+
+.welcome-header {
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 90px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.welcome-header__title {
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+.welcome-header__text {
+    width: 70%;
+    opacity: 0.6;
+    margin-bottom: 60px;
+}
