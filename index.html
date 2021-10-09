@@ -35,11 +35,11 @@
         </p>
     </header>
 
-    <form id="login-form">
-        <input type="text" placeholder="Email or phone number" />
-        <input type="password" placeholder="Password" />
+    <form id="login-form" action="friends.html" method="get">
+        <input name="username" type="text" placeholder="Email or phone number" required />
+        <input name="password" type="password" placeholder="Password" required />
         <input type="submit" value="Log in" />
-        <button type="button" onclick="location.href='www.naver.com'">Sign Up</button>
+        <button type="button" onclick="location.href='#'">Sign Up</button>
         <a href="#">Find Kakao Account or Password</a>
     </form>
 

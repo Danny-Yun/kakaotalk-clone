@@ -1,7 +1,7 @@
 /* 구글 폰트 적용*/
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-/* Status bar*/
+/* Status bar */
 .status-bar {
     font-family: 'Bebas Neue', cursive;
     display: flex;
@@ -27,4 +27,4 @@
 .status-bar__column:last-child i {
   margin-left: 5px;
 }
-/* END Status bar*/
+/* END Status bar */
