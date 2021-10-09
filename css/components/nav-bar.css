@@ -1,0 +1,47 @@
+
+/* nav */
+.nav {
+    background-color: #f9f9fa;
+    padding: 20px 70px;
+    border-top: 1px solid rgba(192, 171, 171, 0.322);
+    position: fixed;  /* 스크롤 내려도 고정하게끔 */
+    width: 100%;     /* 너비 비율 꽉 채우기 */
+    /* 하지만 기존의 padding이 있으면 화면을 넘어가게 되는데, 이를 방지하기 위해 박스 사이즈를 더 늘리지 않게 하는 코드 */
+    box-sizing: border-box;   
+    bottom: 0;    /* 맨 아래에 위치하게끔 */
+}
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+}
+.nav__link {
+    color: #2e363e;
+    position: relative;
+}
+/* 메시지 버튼 알림숫자 */
+.nav__notification {
+    background-color: tomato;
+    color:#f9f9fa;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+     /* 위로 겹치게 하는 코드 (부모 요소인 nav__list를 기준으로 움직인다) */
+    position: absolute;  
+    left: 20px;
+    bottom: 15px;
+}
+/* 더보기 버튼 알림표시 */
+.nav__dot {
+    background-color: tomato;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    position: absolute;  
+    left: 33px;
+    bottom: 30px;
+}
+/* END nav */

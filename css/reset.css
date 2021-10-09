@@ -56,5 +56,9 @@ table {
 
 /* 새로 추가한 코드 */
 input:focus {
-	outline: none;
+	outline: none;   
+}
+a {
+	color: inherit;  /* 디폴트인 검정색으로 상속 */
+	text-decoration: none;  /* 밑줄 제거 */
 }

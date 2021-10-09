@@ -7,6 +7,11 @@
     display: flex;
     justify-content: center;
     padding: 5px 3px;
+    /* 아래부턴 스크롤바를 내려도 고정되게끔 만들어주는 속성들 */
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    top:0;  /* 맨 위에 위치하게끔 */
 }
 .status-bar__column {
     /* 중앙 정렬시 비율이 모두 일치하게끔 */
