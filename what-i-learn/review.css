@@ -39,6 +39,9 @@ div {
     margin-right : 값; -> 오른쪽에 값 적용
     margin-bottom : 값; -> 아래쪽에 값 적용
     margin-left : 값; -> 왼쪽에 값 적용
+
+    * 인라인 요소는 padding과 margin이 좌우로 밖에 안되기 때문에 
+        display: block; 을 통해 블록요소로 바꿔주면 상하로도 적용이 된다, 
 */ 
 #margin {
     margin-top: 50px;

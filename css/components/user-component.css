@@ -44,4 +44,16 @@
     color : rgb(128, 133, 138);
     font-size: 17px;
 }
+.user-component__notification {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: tomato;
+    color:#f9f9fa;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    margin-top: 8px;
+    margin-left: 13px;
+}
 /* END user component */
