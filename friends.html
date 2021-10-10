@@ -7,8 +7,8 @@
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <!-- Start status-bar -->
     <div class="status-bar">
-        <!-- BEM 방식 / 태그를 class로 통일하며 가독성을 높이는 효과가 있다. -->
         <div class="status-bar__column">
             <span>No Service</span>
             <!-- Wifi Icon -->
@@ -25,7 +25,9 @@
             <i class="fas fa-bolt"></i>
         </div>
     </div>
+    <!-- END status-bar -->
 
+    <!-- Start screen header -->
     <header class="screen-header">
         <h1 class="screen-header__title">Friends</h1>
         <div class="screen-header__icons">
@@ -35,7 +37,60 @@
             <span><i class="fas fa-cog fa-lg"></i></span>
         </div>
     </header>
+    <!-- END screen header -->
+    
+    <a id="friends-display-link">
+        <i class="fas fa-info-circle"></i> 
+        Friends' Names Display &nbsp; 
+        <i class="fas fa-chevron-right fa-xs"></i>
+    </a>
 
+    <!-- Start Main : friends-screen  -->
+    <main class="friends-screen">
+
+        <!-- Start user component(My Profile) -->
+        <div class="user-component">
+            <div class="user-component__column">
+
+                <img class="user-component__avatar--lg" 
+                    src="https://avatars.githubusercontent.com/u/86466976?v=4" />
+                <div class="user-component__text">
+                    <h4 class="user-component__name--lg">Riudiu</h4>
+                    <h6 class="user-component__message">
+                        A moment of pain is worth a lifetime of glory.
+                    </h6>
+                </div>
+            </div>
+            <div class="user-component__column"></div>
+        </div>
+        <!-- END user component(My Profile) -->
+
+        <!-- Start friends-screen__channel -->
+        <div class="friends-screen__channel">
+            <div class="friends-screen__channel-header">
+                <span>Channel</span>
+                <i class="fas fa-chevron-up fa-xs"></i>
+            </div>
+        </div>
+        <div class="user-component">
+            <div class="user-component__column">
+
+                <img class="user-component__avatar--sm" 
+                    src="https://play-lh.googleusercontent.com/cf3DwPLbS8Z55sDvUSTQ6PL1goPdm8KbZ81g4TEUAaeUh5LDhkzdjxKQ2RX6BGpv0x4" />
+                <div class="user-component__text">
+                    <h4 class="user-component__name">Channel</h4>
+                </div>
+            </div>
+            <div class="user-component__column">
+                <span>5</span>
+                <i class="fas fa-chevron-right fa-xs"></i>
+            </div>
+        </div>
+        <!-- END friends-screen__channel -->
+    </main>
+    <!-- END Main : friends-screen -->
+
+    <!-- Start nav bar -->
    <nav class="nav"> 
        <ul class="nav__list">
             <li class="nav__btn">
@@ -58,6 +113,7 @@
             </li>
        </ul>
    </nav>
+   <!-- END nav bar -->
 
     <!-- font-awesome code kit -->
     <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
