@@ -1,3 +1,7 @@
 :root {
     --yellow: #fae100;
+    /* --horizontal-space: 25px; */
+    --main-border: 1px solid rgba(0, 0, 0, 0.2);
+    --message-color : rgb(128, 133, 138);
+    --main-screen__space : 0px 20px;
 }

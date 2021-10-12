@@ -41,7 +41,7 @@
 }
 .user-component__message {
     padding-top: 10px;
-    color : rgb(128, 133, 138);
+    color : var(--message-color);
     font-size: 17px;
 }
 .user-component__notification {

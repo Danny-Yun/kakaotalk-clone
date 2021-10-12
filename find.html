@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Find - Kakaotalk</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Start status-bar -->
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <!-- Wifi Icon -->
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>18:48</span>
+        </div>
+        <div class="status-bar__column">
+            <span>9%</span>
+            <!-- Battery Icon -->
+            <i class="fas fa-battery-quarter fa-lg"></i>
+            <!-- Lightning Icon -->
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+    <!-- END status-bar -->
+
+    <!-- Start screen header -->
+    <header class="screen-header">
+        <h1 class="screen-header__title">Find</h1>
+        <div class="screen-header__icons">
+            <span><i class="fas fa-search fa-lg"></i></span>
+            <span><i class="fas fa-cog fa-lg"></i></span>
+        </div>
+    </header>
+    <!-- END screen header -->
+
+    <!-- Start Main : find-screen -->
+    <main class="find-screen">
+
+        <!--Start find-icons -->
+        <div class="find-icons">
+
+            <div class="find-icons__icon">
+                <i class="fas fa-qrcode fa-2x"></i>
+                <span>QR Code</span>
+            </div>
+            <div class="find-icons__icon">
+                <i class="far fa-address-book fa-2x"></i>
+                <span>Add by Contacts</span>
+            </div>
+            <div class="find-icons__icon">
+                <i class="fas fa-fingerprint fa-2x"></i>
+                <span>Add by ID</span>
+            </div>
+            <div class="find-icons__icon">
+                <i class="far fa-envelope fa-2x"></i>
+                <span>Invite</span>
+            </div>
+        </div>
+        <!--END find-icons -->
+
+        <!--Start recommended-friends -->
+        <div class="recommended-friends">
+            <h6 class="recommended-friends__title">Recommended Friends</h6>
+            <span>
+                You have no recommended friends.
+            </span>
+        </div>
+        <!--END recommended-friends -->
+
+        <!--Start open chat -->
+        <div class="open-chat">
+            <div class="open-chat__header">
+                <h4>Open Chat</h4>
+                <span>Go to Openchat Home <i class="fas fa-chevron-right fa-xs"></i></span>
+            </div>
+
+            <div class="open-post">
+
+                <div class="open-post__column">
+                    <h5 class="open-post__title">Chelsea F.C.</h5>
+                    <h6 class="open-post__hashtags">#COYB #Winner #London</h6>
+
+                    <div class="open-post__members">
+                        <img src="/img/profile01.jpg" />
+                        <span class="open-post__members-count">803 members</span>
+                        <div class="divider">|</div>
+                        <span class="open-post__members-status">Active</span>
+                    </div>
+                </div>
+                <div class="open-post__column">
+                    <img src="/img/Chelsea.png" />
+                    <div class="open-post__heart-count">
+                        <i class="fas fa-heart fa-sm"></i>
+                        <span>317</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--END open chat -->
+    </main>
+    <!-- END Main : friends-screen -->
+
+    <!-- Start nav bar -->
+    <nav class="nav"> 
+        <ul class="nav__list">
+            <li class="nav__btn">
+                <a class="nav__link" href="friends.html"><i class="far fa-user fa-2x"></i></a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="chats.html">
+                    <span class="nav__notification">3</span>
+                    <i class="far fa-comment fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="find.html">
+                    <i class="fas fa-search fa-2x"></i></a>
+            </li> 
+            <li class="nav__btn">
+                <a class="nav__link" href="more.html">
+                    <span class="nav__dot"></span>
+                    <i class="fas fa-ellipsis-h fa-2x"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- END nav bar -->
+
+    <!-- font-awesome code kit -->
+    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+</body>
+</html>
