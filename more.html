@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>More - Kakaotalk</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Start status-bar -->
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <!-- Wifi Icon -->
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>18:49</span>
+        </div>
+        <div class="status-bar__column">
+            <span>9%</span>
+            <!-- Battery Icon -->
+            <i class="fas fa-battery-quarter fa-lg"></i>
+            <!-- Lightning Icon -->
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+    <!-- END status-bar -->
+
+    <!-- Start screen header -->
+    <header class="screen-header">
+        <h1 class="screen-header__title">More</h1>
+        <div class="screen-header__icons">
+            <span><i class="fas fa-search fa-lg"></i></span>
+            <span><i class="fas fa-music fa-lg"></i></span>
+            <span><i class="fas fa-cog fa-lg"></i></span>
+        </div>
+    </header>
+    <!-- END screen header -->
+
+    <!-- Start Main : more-screen -->
+    <main class="more-screen">
+
+        <!-- Start user component(My Profile) -->
+        <div class="user-component">
+            <div class="user-component__column">
+
+                <img class="user-component__avatar--lg" 
+                    src="https://avatars.githubusercontent.com/u/86466976?v=4" />
+                <div class="user-component__text">
+                    <h4 class="user-component__name--lg">Riudiu</h4>
+                    <h6 class="user-component__message">
+                        +1 787-493-3811
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </h6>
+                </div>
+            </div>
+            <div class="user-component__column">
+                <i class="far fa-comment-alt fa-2x"></i>
+            </div>
+        </div>
+        <!-- END user component(My Profile) -->
+
+        <!-- Start icon-row -->
+        <div class="icon-row">
+            <div class="icon-row__icon">
+                <i class="far fa-calendar-check fa-2x"></i>
+                <span>Calendar</span>
+            </div>
+            <div class="icon-row__icon">
+                <i class="far fa-hdd fa-2x"></i>
+                <span>Talk Drive</span>
+            </div>
+            <div class="icon-row__icon">
+                <i class="far fa-smile-wink fa-2x"></i>
+                <span>Emoticons</span>
+            </div>
+            <div class="icon-row__icon">
+                <i class="fas fa-paint-brush fa-2x"></i>
+                <span>Themes</span>
+            </div>
+        </div>
+        <div class="icon-row">
+            <div class="icon-row__icon">
+                <i class="far fa-user-circle fa-2x"></i>
+                <span>Account</span>
+            </div>
+            <div class="icon-row__icon">
+                <i class="far fa-comments fa-2x"></i>
+                <span>Openchat</span>
+            </div>
+        </div>
+        <!-- END icon-row -->
+
+        <!-- Start more-suggestions -->
+        <div class="more-suggestions">
+            <h4 class="more-suggestions__title">Suggestions</h4>
+            
+            <div class="more-suggestions__icons">
+                <div class="more-suggestions__icon">
+                    <div class="more-suggestions__icon-image">
+                        <img src="/img/KakaoStory.png" />
+                    </div>
+                    <span class="more-suggestions__icon-text">Kakao Story</span>
+                </div>
+                <div class="more-suggestions__icon">
+                    <div class="more-suggestions__icon-image">
+                        <img src="/img/KakaoFriends.png" />
+                    </div>
+                    <span class="more-suggestions__icon-text">Kakao Friends</span>
+                </div>
+            </div>
+        </div>
+        <!-- END more-suggestions -->
+    </main>
+    <!-- END Main : more-screen -->
+
+    <!-- Start nav bar -->
+    <nav class="nav"> 
+        <ul class="nav__list">
+            <li class="nav__btn">
+                <a class="nav__link" href="friends.html"><i class="far fa-user fa-2x"></i></a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="chats.html">
+                    <span class="nav__notification">3</span>
+                    <i class="far fa-comment fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="find.html">
+                    <i class="fas fa-search fa-2x"></i></a>
+            </li> 
+            <li class="nav__btn">
+                <a class="nav__link" href="more.html">
+                    <span class="nav__dot"></span>
+                    <i class="fas fa-ellipsis-h fa-2x"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- END nav bar -->
+
+    <!-- font-awesome code kit -->
+    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+</body>
+</html>

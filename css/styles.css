@@ -1,4 +1,4 @@
-/* 구글 폰트 적용  (font-family: 'Open Sans', sans-serif;) */
+/* 구글 폰트 적용 (font-family: 'Open Sans', sans-serif;) */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
 /* reset 적용*/
 @import "reset.css";
@@ -9,11 +9,13 @@
 @import "components/nav-bar.css";
 @import "components/screen-header.css";
 @import "components/user-component.css";
+@import "components/icon-row.css";
 
 /* Screens */
 @import "screens/login.css";
 @import "screens/friends.css";    
 @import "screens/find.css";    
+@import "screens/more.css";    
 
 body {
     height: 1000vh;

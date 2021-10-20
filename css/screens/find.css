@@ -3,23 +3,6 @@
     padding: var(--main-screen__space);
 }
 
-/* find-icons */
-.find-icons {
-    display: flex;
-    justify-content: space-between;
-    padding: 30px 50px;
-}
-.find-icons__icon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Open Sans', sans-serif;
-}
-.find-icons__icon i {
-    margin-bottom: 20px;
-}
-/* END find-icons */
-
 /* recommended-friends */
 .recommended-friends {
     border-top: var(--main-border);

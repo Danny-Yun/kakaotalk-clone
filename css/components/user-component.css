@@ -9,7 +9,8 @@
     justify-content: space-between;
 }
 .user-component__column:nth-child(even){
-    padding: 15px;
+    padding: 20px;
+    margin-right: 10px;
     color:rgba(0, 0, 0, 0.5);
 }
 .user-component__avatar--lg {
