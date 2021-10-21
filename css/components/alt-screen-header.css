@@ -1,0 +1,13 @@
+
+/* alt screen header */
+.alt-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 20px;
+}
+.alt-header__title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+}
+/* END alt screen header */

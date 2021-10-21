@@ -1,0 +1,28 @@
+
+.settings-screen {
+    padding: var(--main-screen__space);
+}
+
+/* settings-list */
+.settings__setting {
+    font-family: 'Open Sans', sans-serif;
+    padding: 25px 0px;
+    border-bottom: var(--main-border);
+    border-color: rgba(0, 0, 0, 0.09);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+}
+.settings__setting i {
+    margin-right: 20px;
+    font-size: 23px;
+    opacity: 0.87;
+}
+.settings__setting-column:nth-child(even) {
+    color: var(--message-color);
+    font-size: 18px;
+    opacity: 0.8;
+}
+/* END settings-list */
