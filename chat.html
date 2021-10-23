@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Chat - Kakaotalk</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="chat-screen">
+    <!-- Start status-bar -->
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <!-- Wifi Icon -->
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>18:53</span>
+        </div>
+        <div class="status-bar__column">
+            <span>7%</span>
+            <!-- Battery Icon -->
+            <i class="fas fa-battery-quarter fa-lg"></i>
+            <!-- Lightning Icon -->
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+    <!-- END status-bar -->
+
+    <!-- Start alt-screen-header -->
+    <header class="alt-header">
+        <div class="alt-header__column">
+            <a href="chats.html">
+                <i class="fas fa-angle-left fa-3x"></i>
+            </a>
+        </div>
+        <div class="alt-header__column">
+            <h1 class="alt-header__title">01nam</h1>
+        </div>
+        <div class="alt-header__column">
+            <span><i class="fas fa-search fa-2x"></i></span>
+            <span><i class="fas fa-bars fa-2x"></i></span>
+        </div>
+    </header>
+    <!-- END alt-screen-header -->
+
+    <!-- Start Main : chat-screen -->
+    <main class="chat-screen">
+        <div class="chat__timestamp">
+            Friday, Oct 22, 2021
+        </div>
+
+        <div class="message-row">
+            <img src="img/오일남.jfif" />
+            <div class="message-row__content">
+                <span class="message__writer">01nam</span>
+                <div class="message__info">
+                    <span class="message__bubble">
+                        내가... 뭐..라고..  했지??!
+                    </span>
+                    <span class="message__time">18:47</span>
+                </div>
+            </div>
+        </div>
+        <div class="message-row--own">
+            <div class="message-row__content">
+                <div class="message__info">
+                    <div class="message__status">
+                        <span class="message__un-read">1</span>
+                        <span class="message__time">18:52</span>
+                    </div>
+                    <span class="message__bubble">
+                        무슨 말씀이세요
+                    </span>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!-- END Main : chat-screen -->  
+
+    <!-- Start reply keyboard -->
+    <form class="reply">
+        <div class="reply__column">
+            <i class="far fa-plus-square"></i>
+        </div>
+        <div class="reply__column">
+            <input type="text" value="  깐부치킨 사준다고 하셨잖아요!" />
+            <i class="far fa-smile"></i>
+            <button>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+        </div>
+    </form>
+    <!-- END reply keyboard -->
+
+    <!-- font-awesome code kit -->
+    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+</body>
+</html>
