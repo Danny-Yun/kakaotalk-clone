@@ -1,4 +1,4 @@
-# /play sexyback kakaotalk-clone
+# :zap: KakaoTalk-Clone
 
 <br>
 
